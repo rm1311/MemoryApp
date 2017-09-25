@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="MemoryApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MemoryApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="Gra Memory"/>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" Width="140">
+            <Button Content="Nowa Gra" Width="140"/>
+            <Button Content="Wyniki" Width="140"/>
+            <Button Content="Zasady Gry" Width="140"/>
+            <Button Content="Autor" Width="140"/>
+        </StackPanel>
+        
+
+
+    </Grid>
+</Page>
