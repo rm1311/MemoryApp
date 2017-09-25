@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApplication1.Classes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,7 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using MemoryApp.Classes;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,7 +26,7 @@ namespace MemoryApp
     {
         public MainPage()
         {
-            MemoryTable memttable = new MemoryTable();
+            MemTable memttable = new MemTable();
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
