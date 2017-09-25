@@ -9,17 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <Grid.RowDefinitions>
-
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="7*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Text="Gra Memory"/>
         <StackPanel Grid.Row="2" VerticalAlignment="Center" Width="140">
-            <Button Content="Nowa Gra" Width="140"/>
-            <Button Content="Wyniki" Width="140"/>
-            <Button Content="Zasady Gry" Width="140"/>
-            <Button Content="Autor" Width="140"/>
+            <Button Content="New Game" Width="140" Name="NewGame" Click="NewGame_Click"/>
+            <Button Content="Scores" Width="140" Name="Scores" Click="Scores_Click"/>
+            <Button Content="Rules" Width="140" Name="Rules" Click="Rules_Click"/>
+            <Button Content="Author" Width="140" Name="Author" Click="Author_Click"/>
         </StackPanel>
         
 
