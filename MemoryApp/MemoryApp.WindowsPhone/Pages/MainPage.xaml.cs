@@ -1,8 +1,8 @@
-﻿using ConsoleApplication1.Classes;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using MemoryApp.Pages;
+using MemoryApp.Classes;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -15,7 +15,7 @@ namespace MemoryApp
     {
         public MainPage()
         {
-            MemTable memttable = new MemTable();
+            MemTable mt = new MemTable();
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
@@ -45,7 +45,7 @@ namespace MemoryApp
 
         private void Scores_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Scores));
+            Frame.Navigate(typeof(Scores),"Jakis text");
 
         }
 

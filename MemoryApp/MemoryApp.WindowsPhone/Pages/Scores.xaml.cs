@@ -34,6 +34,9 @@ namespace MemoryApp.Pages
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var value = (string)e.Parameter;
+            buttonValue.Content = value;
+                 
         }
     }
 }

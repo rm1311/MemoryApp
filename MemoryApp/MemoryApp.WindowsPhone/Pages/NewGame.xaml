@@ -9,6 +9,45 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-    
+        <Grid Height="400" Width="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+                <TextBlock FontSize="25" Tapped="but1_Tapped" Grid.Column="1" Name="but1" Grid.Row="1"/>
+                <TextBlock FontSize="25" Tapped="but2_Tapped" Grid.Column="1" Name="but2" Grid.Row="3"/>
+                <TextBlock FontSize="25" Tapped="but3_Tapped" Grid.Column="1" Name="but3" Grid.Row="5"/>
+                <TextBlock FontSize="25" Tapped="but4_Tapped" Grid.Column="1" Name="but4" Grid.Row="7"/>
+                <TextBlock FontSize="25" Tapped="but5_Tapped" Grid.Column="3" Name="but5" Grid.Row="1"/>
+                <TextBlock FontSize="25" Tapped="but6_Tapped" Grid.Column="3" Name="but6" Grid.Row="3"/>
+                <TextBlock FontSize="25" Tapped="but7_Tapped" Grid.Column="3" Name="but7" Grid.Row="5"/>
+                <TextBlock FontSize="25" Tapped="but8_Tapped" Grid.Column="3" Name="but8" Grid.Row="7"/>
+                <TextBlock FontSize="25" Tapped="but9_Tapped" Grid.Column="5" Name="but9" Grid.Row="1"/>
+                <TextBlock FontSize="25" Tapped="but10_Tapped"  Grid.Column="5" Name="but10" Grid.Row="3"/>
+                <TextBlock FontSize="25" Tapped="but11_Tapped"  Grid.Column="5" Name="but11" Grid.Row="5"/>
+                <TextBlock FontSize="25" Tapped="but12_Tapped"  Grid.Column="5" Name="but12" Grid.Row="7"/>
+                <TextBlock FontSize="25" Tapped="but13_Tapped"  Grid.Column="7" Name="but13" Grid.Row="1"/>
+                <TextBlock FontSize="25" Tapped="but14_Tapped"  Grid.Column="7" Name="but14" Grid.Row="3"/>
+                <TextBlock FontSize="25" Tapped="but15_Tapped"  Grid.Column="7" Name="but15" Grid.Row="5"/>
+                <TextBlock FontSize="25" Tapped="but16_Tapped" Grid.Column="7" Name="but16" Grid.Row="7"/>
+        </Grid>
     </Grid>
 </Page>

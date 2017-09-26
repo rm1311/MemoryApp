@@ -83,6 +83,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\FirstTap.cs" />
     <Compile Include="Classes\MemoryTable.cs" />
     <Compile Include="Pages\Author.xaml.cs">
       <DependentUpon>Author.xaml</DependentUpon>

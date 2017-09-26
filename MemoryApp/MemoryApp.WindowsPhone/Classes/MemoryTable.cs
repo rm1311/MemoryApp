@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1.Classes
+namespace MemoryApp.Classes
 {
     public class MemTable
     {
         private int[] memTable;
+        public int[] _memTable { get { return memTable; } set { memTable = value; } }
         public bool cont(int[] table, int number)
         {
             for (int i = 0; i < table.Length; i++)
