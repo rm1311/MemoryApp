@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using MemoryApp.Classes;
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace MemoryApp.Pages
@@ -20,14 +21,12 @@ namespace MemoryApp.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Scores : Page
+    public sealed partial class AddPerson : Page
     {
-        Person val = new Person();
-        public Scores()
+    
+        public AddPerson()
         {
-            
             this.InitializeComponent();
-
         }
 
         /// <summary>
@@ -37,10 +36,16 @@ namespace MemoryApp.Pages
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Person value = (Person)e.Parameter;
+        }
 
-            col1.Text = value._Name;
-            col2.Text = value._Score;
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (nameTextBox.Text == "")
+                validationTextBox.Text = "You dont give me Your Name";
+            else
+            {
+               this.Frame.Navigate(typeof(NewGame),nameTextBox.Text);
+            }
         }
     }
 }

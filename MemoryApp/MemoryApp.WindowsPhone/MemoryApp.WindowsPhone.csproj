@@ -85,6 +85,10 @@
   <ItemGroup>
     <Compile Include="Classes\FirstTap.cs" />
     <Compile Include="Classes\MemoryTable.cs" />
+    <Compile Include="Classes\Person.cs" />
+    <Compile Include="Pages\AddPerson.xaml.cs">
+      <DependentUpon>AddPerson.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Author.xaml.cs">
       <DependentUpon>Author.xaml</DependentUpon>
     </Compile>
@@ -116,6 +120,10 @@
     <Content Include="Assets\WideLogo.scale-240.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Pages\AddPerson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Author.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

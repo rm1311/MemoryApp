@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="MemoryApp.Pages.AddPerson"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MemoryApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">What is You Name? </TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="150" VerticalAlignment="Center" Name="nameTextBox"/>
+        <Button Grid.Row="2" HorizontalAlignment="Center" Content="Start!" Click="Button_Click"/>
+        <TextBlock TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="10" Name="validationTextBox"/>
+    </Grid> 
+</Page>

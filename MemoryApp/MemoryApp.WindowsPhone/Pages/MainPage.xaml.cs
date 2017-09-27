@@ -40,14 +40,13 @@ namespace MemoryApp
 
         private void NewGame_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(NewGame));
+            Frame.Navigate(typeof(AddPerson));
         }
 
-        private void Scores_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Scores),"Jakis text");
-
-        }
+ //       private void Scores_Click(object sender, RoutedEventArgs e)
+ //       {
+ //           Frame.Navigate(typeof(Scores));
+ //       }
 
         private void Rules_Click(object sender, RoutedEventArgs e)
         {
